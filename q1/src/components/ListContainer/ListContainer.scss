@@ -3,6 +3,18 @@
 .list_scroll_area {
   height: 80vh;
   overflow: auto;
+
+  .no_data {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+  }
 }
 
 .pagination_cont {

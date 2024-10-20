@@ -8,7 +8,7 @@ import { IFilterProps } from "../../utils/interfaces/CommonInterfaces";
 
 const initialState: IFilterProps = {
   mainFilter: "unread",
-  currentPage: 1,
+  currentPage: 0,
   selectedEmail: {
     date: 0,
     from: { email: "", name: "" },
