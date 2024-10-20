@@ -1,0 +1,13 @@
+import React from "react";
+import "./styles/Common.scss";
+import AppLayout from "./components/AppLayout";
+
+function App() {
+  return (
+    <>
+      <AppLayout />
+    </>
+  );
+}
+
+export default App;

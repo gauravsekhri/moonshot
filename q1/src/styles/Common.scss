@@ -1,0 +1,36 @@
+@import "./Variables.scss";
+
+@import url("../components/AppLayout/AppLayout.scss");
+@import url("../components/ListItem/ListItem.scss");
+@import url("../components/FilterBar/FilterBar.scss");
+@import url("../components/EmailDisplay/EmailDisplay.scss");
+@import url("../components/ListContainer/ListContainer.scss");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $background;
+  color: $text;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $border;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $accent;
+  border-radius: 10px;
+}
+
+//   ::-webkit-scrollbar-thumb:hover {
+//     background: #b30000;
+//   }

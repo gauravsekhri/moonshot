@@ -1,0 +1,27 @@
+@import "../../styles/Variables.scss";
+
+.filterbar_container {
+  display: flex;
+  align-items: center;
+  margin: 20px 10px;
+  font-size: 18px;
+  gap: 10px;
+
+  .filter_label {
+    margin: 0px 15px 0px 0px;
+  }
+
+  .flter_item {
+    border-radius: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $filterButton;
+    }
+  }
+
+  .selected_filter {
+    background-color: $filterButton;
+  }
+}

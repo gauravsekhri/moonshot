@@ -1,0 +1,39 @@
+@mixin breakpoint($point) {
+  @if $point == mobile {
+    @media (min-width: 320px) and (max-width: 767px) {
+      @content;
+    }
+  } @else if $point == Ipad_port {
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+      @content;
+    }
+  } @else if ($point == Ipad_land) or ($point == tablet) {
+    @media (min-width: 768px) and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $point == smScreen {
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      @content;
+    }
+  } @else if $point == lgScreen {
+    @media (min-width: 1281px) and (max-width: 1365px) {
+      @content;
+    }
+  } @else if $point == smLaptop {
+    @media (min-width: 1366px) and (max-width: 1400px) {
+      @content;
+    }
+  } @else if $point == lgLaptop {
+    @media (min-width: 1401px) and (max-width: 1600px) {
+      @content;
+    }
+  } @else if $point == lgLarge {
+    @media (min-width: 1601px) and (max-width: 1919px) {
+      @content;
+    }
+  } @else if $point == xlLarge {
+    @media (min-width: 1920px) and (max-width: 3000px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "../../styles/mixins.scss";
+
+.contents_cont {
+  width: 90%;
+  margin: 100px auto;
+
+  @include breakpoint(mobile) {
+    margin: 30px auto 100px auto;
+  }
+
+  .filter_bar {
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    .date_picker {
+      padding: 10px;
+      outline: 0;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+    }
+
+    .filter_dd {
+      padding: 10px;
+      outline: 0;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .copy-url {
+      padding: 10px 15px;
+      outline: 0;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 12px;
+
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.349);
+      }
+    }
+
+    @include breakpoint(mobile) {
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+  }
+
+  .main_charts_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    @include breakpoint(mobile) {
+      display: block;
+      margin: auto;
+    }
+
+    @include breakpoint(tablet) {
+      display: block;
+      margin: auto;
+    }
+  }
+}

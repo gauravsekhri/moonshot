@@ -1,0 +1,30 @@
+@import "../../styles/Variables.scss";
+
+.main_container {
+  max-width: 80%;
+  margin: 30px auto;
+
+  .inner_cont {
+    display: flex;
+    gap: 15px;
+
+    .left_cont {
+      width: 100%;
+      min-width: 400px;
+    }
+  }
+}
+
+.master-slave {
+  .inner_cont {
+    .left_cont {
+      width: 30%;
+      min-width: 400px;
+    }
+
+    .right_cont {
+      width: 70%;
+      border-radius: 10px;
+    }
+  }
+}

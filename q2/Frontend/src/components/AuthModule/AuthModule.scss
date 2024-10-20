@@ -1,0 +1,127 @@
+@import "../../styles/mixins.scss";
+
+.auth_main_cont {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+  .form_cont {
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.13);
+    background: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+
+    @include breakpoint(mobile) {
+      width: 300px;
+      padding: 30px;
+    }
+
+    @include breakpoint(tablet) {
+      width: 400px;
+      padding: 35px;
+    }
+
+    h3 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 42px;
+      text-align: center;
+
+      @include breakpoint(mobile) {
+        font-size: 22px;
+      }
+
+      @include breakpoint(tablet) {
+        font-size: 28px;
+      }
+    }
+
+    label {
+      display: block;
+      margin-top: 30px;
+      font-size: 16px;
+      font-weight: 500;
+
+      @include breakpoint(mobile) {
+        font-size: 12px;
+      }
+    }
+
+    input {
+      display: block;
+      height: 50px;
+      width: 100%;
+      background-color: #e8f0fe;
+      border-radius: 3px;
+      padding: 0 10px;
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 300;
+      outline: none;
+      border: none;
+
+      @include breakpoint(mobile) {
+        font-size: 12px;
+      }
+    }
+
+    .err_msg {
+      color: red;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .submit_btn {
+      margin-top: 50px;
+      width: 100%;
+      background-color: #ffffff;
+      color: #080710;
+      padding: 15px 0;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+
+      @include breakpoint(mobile) {
+        padding: 10px 0;
+        font-size: 14px;
+      }
+
+      &:hover {
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        border-color: transparent;
+        color: #fff;
+      }
+    }
+
+    .footer_text {
+      text-align: center;
+      margin: 25px auto 0px auto;
+      cursor: pointer;
+      color: gray;
+
+      &:hover {
+        color: #000;
+      }
+
+      @include breakpoint(mobile) {
+        font-size: 12px;
+      }
+
+      @include breakpoint(tablet) {
+        font-size: 16px;
+      }
+    }
+  }
+}
